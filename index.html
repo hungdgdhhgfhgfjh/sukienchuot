@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+       <img src="th.jpg" id="my ball">
+       <br>
+       <br>
+       <input type="button" value="click me" onclick="moveRight();">
+       <br>
+       <p>click above to move Right your ball </p>
+   </form>
+   <script>
+      var chuot = null;
+      chuot = document.getElementById("my ball");
+      function init() {
+        chuot = document.getElementById("my ball");
+        chuot.style.position = "relative";
+        chuot.style.left = "0px";
+      }
+      function moveRight() {
+     chuot.style.left = parseInt(chuot.style.left)+ 10 + "px";
+
+      }
+      window.onload = init;
+   </script>
+</body>
+</html>
