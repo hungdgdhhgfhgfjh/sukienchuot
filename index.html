@@ -13,6 +13,7 @@
        <br>
        <input type="button" value="click me" onclick="moveRight();">
        <br>
+       <input type="button" value="click to" onclick="moveLeft();">
        <p>click above to move Right your ball </p>
    </form>
    <script>
@@ -26,6 +27,9 @@
       function moveRight() {
      chuot.style.left = parseInt(chuot.style.left)+ 10 + "px";
 
+      }
+      function moveLeft(){
+        chuot.style.left = parseInt(chuot.style.left) - 10 +"px"
       }
       window.onload = init;
    </script>

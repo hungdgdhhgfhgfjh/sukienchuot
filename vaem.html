@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="position: absolute; top: 200px; left: 200px;">DO YOU LOVE ME</h1>
+    <input onclick="nhoem();" type="button" value="Yes" style="position: absolute;top:300px; left: 400px;" id="">
+    <input id="yeunang" onmousemove="nhonha();" type="button" value="No" style="position: absolute;top: 300px; left: 250px;" id="">
+    <script>
+         function nhoem(){
+             alert("em sẽ là mãi người yêu anh");
+         }
+         function nhonha(){
+             
+             let random_left = Math.floor(Math.random()*500) + 100;
+             let random_top = Math.floor(Math.random()*500) + 100;
+             let yeunang = document.getElementById("yeunang");
+             yeunang.style.left = random_left + "px";
+             yeunang.style.top = random_top + "px";
+         }
+    </script>
+    
+</body>
+</html>
