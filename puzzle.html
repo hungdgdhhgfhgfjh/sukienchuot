@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    img {
+        width: 100%;
+    }
+</style>
+<body>
+    <table width="600px">
+        <tr>
+            <td><img src="img1.jpg" alt="" id="n1" onclick="n1('img_1');"></td>
+        </tr>
+        <tr>
+            <td><img src="img2.jpg" alt="" id="n2" onclick="n1('img_2');"></td>
+        </tr>
+        <tr>
+            <td><img src="img3.jpg" alt="" id="n3" onclick="n1('img_3');"></td>
+        </tr>
+        <tr>
+            <td><img src="img4.jpg" alt=""id="n4" onclick="n1('img_4');"></td>
+        </tr>
+        <tr>
+            <td><img src="img14.jpg" alt=""id="n5" onclick="n1('img_5');"></td>
+        </tr>
+        <tr>
+            <td><img src="img11.jpg" alt=""id="n5" onclick="n1('img_5');"></td>
+        </tr>
+    </table>
+    <script>
+             function n1(input_img){
+                console.log( input_img );
+                let img = document.getElementById( input_img );
+			//document.getElementById( 'img_5' );
+
+			let random = Math.floor(Math.random() * 15)+ 1;
+            
+			let random = Math.floor(Math.random() * 15)+ 1;
+
+               img.src = 'images/' + random + '.jpg';
+             }
+             function n1(){
+			let img = document.getElementById( "n1" );
+
+			let random = Math.floor(Math.random() * 15)+ 1;
+
+			img.src = 'images/' + random + '.jpg';
+		}
+    </script>
+</body>
+</html>
